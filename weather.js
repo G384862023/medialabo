@@ -47,8 +47,13 @@ let data = {
 
 ////////// 課題3-2 ここからプログラムを書こう
 let div = document.querySelector('div#result'); 
-<p> data.name</p>
-
+let w=document.createElement('a');
+w.textContent = data.name;
+w.textContent = data.id;
+w.textContent = data.weather[0].description;
+w.textContent = data.main.temp_min;
+w.textContent = data.main.temp_max;
+div.insertAdjacentElement('beforeend', w);
 /*console.log(data.id);
 console.log(data.weather[0].description);
 console.log(data.main.temp_min);
