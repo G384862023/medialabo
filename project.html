@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>世界の天気</title>
-    <script src="weather.js" defer></script>
-  </head>
-  <body>
-    <h1>世界の天気</h1>
-    <h3><ul>
-        <li>天気:曇りがち</li>
-        <li>最低気温: 9.94</li>
-        <li>最高気温: 9.94</li>
-        <li>湿度: 14</li>
-        
-    </ul></h3>
-    <div id="result"></div>
-　</body>
+<head>
+  <meta charset="utf-8">
+  <title>世界の天気</title>
+  <script src="weather.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+</head>
+<body>
+  <h1>世界の天気</h1>
+  <select name="tenki" id="tenki">
+    <option value="1816670">北京</option>
+    <option value="1850147">東京</option>
+    <option value="2147714">シドニー</option>
+    <option value="1880252">シンガポール</option>
+    <option value="360630">カイロ</option>
+    <option value="524901">モスクワ</option>
+    <option value="2643743">ロンドン</option>
+    <option value="993800">ヨハネスブルク</option>
+    <option value="2968815">パリ</option>
+    <option value="3451189">リオデジャネイロ</option>
+    <option value="5128581">ニューヨーク</option>
+    <option value="5368361">ロサンゼルス</option>
+  </select>
+  <button id="btn">検索</button>
+  <div id="result"></div>
+</body>
 </html>
